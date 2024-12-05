@@ -1,9 +1,0 @@
-{
-  "/_not-found/page": "app/_not-found/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(non-dashboard)/landing/page": "app/(non-dashboard)/landing/page.js",
-  "/page": "app/page.js",
-  "/(non-dashboard)/products/[id]/page": "app/(non-dashboard)/products/[id]/page.js",
-  "/(non-dashboard)/products/page": "app/(non-dashboard)/products/page.js",
-  "/(non-dashboard)/products/wishlist/page": "app/(non-dashboard)/products/wishlist/page.js"
-}
