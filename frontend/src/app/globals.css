@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Default Light Theme */
+:root {
+  --text-color: #070808;
+  --background-color: #f6f9f8;
+  --primary-color: #5cb296;
+  --secondary-color: #9adfc7;
+  --accent-color: #d2ebc1;
+
+  --primary-100: #d3f0e6;
+  /* Lightest */
+  --primary-200: #aee2cd;
+  --primary-300: #89d4b4;
+  --primary-400: #64c99b;
+  --primary-500: #5cb296;
+  /* Base */
+  --primary-600: #4b8e7a;
+  --primary-700: #3a6b60;
+  --primary-800: #295847;
+  --primary-900: #18462f;
+  /* Darkest */
+}
+/* Dark Theme */
+html.dark {
+  --text-color: #f7f8f8;
+  --background-color: #060908;
+  --primary-color: #4da386;
+  --secondary-color: #20654d;
+  --accent-color: #209d73;
+}
+/* Custom Blue Theme */
+html.blue {
+  --text-color: #050b0b;
+  /* Midnight Blue */
+  --background-color: #f6fcfc;
+  /* Alice Blue */
+  --primary-color: #3cc9d4;
+  /* Dodger Blue */
+  --secondary-color: #87e7ee;
+  /* Deep Sky Blue */
+  /* --accent-color: #56e8f2; */
+  --accent-color: #94e3e8;
+
+
+  --primary-50: #eefdfd;
+  /* Very Light Blue */
+  --primary-100: #d5f7f8;
+  /* Light Blue */
+  --primary-200: #b0eef1;
+  /* Soft Blue */
+  --primary-300: #7ae0e6;
+  /* Light Medium Blue */
+  --primary-400: #3cc9d4;
+  /* Medium Blue */
+  --primary-500: #20acba;
+  /* Base Blue */
+  --primary-600: #1e8c9c;
+  /* Darker Blue */
+  --primary-700: #1f717f;
+  /* Deep Blue */
+  --primary-800: #215c69;
+  /* Very Dark Blue */
+  --primary-900: #204d59;
+  /* Deepest Blue */
+  --primary-950: #10333c;
+  /* Very Deep Blue */
+}
+/* Custom Green Theme */
+html.pink {
+  --text-color: #0f0609;
+  --background-color: #fefbfc;
+  --primary-color: #cd436e;
+  --secondary-color: #e68eaa;
+  /* --accent-color: #e15b85; */
+  --accent-color: #f793b2;
+
+
+  --primary-50: #fcf3f7;
+  /* Very Light Pink */
+  --primary-100: #fae9f1;
+  /* Light Pink */
+  --primary-200: #f7d3e2;
+  /* Soft Pink */
+  --primary-300: #f1b0ca;
+  /* Light Medium Pink */
+  --primary-400: #e87ea7;
+  /* Medium Pink */
+  --primary-500: #dd5787;
+  /* Base Pink */
+  --primary-600: #cd436e;
+  /* Darker Pink */
+  --primary-700: #ae284e;
+  /* Deep Pink */
+  --primary-800: #902441;
+  /* Very Dark Pink */
+  --primary-900: #792239;
+  /* Deepest Pink */
+  --primary-950: #490e1d;
+  /* Very Deep Pink */
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
