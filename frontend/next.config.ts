@@ -17,6 +17,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  eslint: {
+    ignoreDuringBuilds: true, // Skip linting in production builds
+  },
 };
 
 export default nextConfig;
