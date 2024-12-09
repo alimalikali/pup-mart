@@ -35,9 +35,11 @@ const ListingsCard = ({ product }: ListingsCardProps) => {
         </Link>
       </div>
 
-      <img
+      <Image
         alt={product.imageAlt}
         src={product.imageSrc}
+        height={300}
+        width={300}
         className="aspect-square w-full rounded-md bg-gray-200 object-contain group-hover:opacity-75 lg:aspect-auto lg:h-80"
       />
       <div className="product-card__content mt-3">

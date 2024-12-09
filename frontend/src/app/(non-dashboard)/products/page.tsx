@@ -36,7 +36,9 @@ const Child = () => {
 export default function ProductsPage() {
   return (
     <div className="">
-      <FilterComponent children={<Child />} />
+      <FilterComponent>
+        <Child />
+      </FilterComponent>
     </div>
   );
 }

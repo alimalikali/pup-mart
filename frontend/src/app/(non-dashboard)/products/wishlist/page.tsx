@@ -3,6 +3,7 @@
 import React from "react";
 import { Heart, Trash2, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 // Fake dataset
 const wishlistData = [
@@ -36,9 +37,11 @@ const WishList = () => {
             key={item.id}
             className="relative bg-background rounded-lg shadow-lg p-4 border border-primary transition-transform transform hover:scale-105"
           >
-            <img
+            <Image
               src={item.image}
               alt={item.title}
+              height={192}
+              width={200}
               className="rounded-t-lg w-full h-48 object-cover"
             />
             <div className="p-4">

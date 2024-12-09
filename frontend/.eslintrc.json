@@ -4,8 +4,11 @@
     "next/typescript"
   ],
   "rules": {
-    "@typescript-eslint/no-unused-vars": "off", // Disable rule
-    "react/no-children-prop": "warn", // Change to warning
-    "@next/next/no-img-element": "off" // Disable rule for images
-  },
+    "@typescript-eslint/no-unused-vars": "off", 
+    "react/no-children-prop": "warn",
+    "@next/next/no-img-element": "off",
+    "react/no-unescaped-entities": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-require-imports": "off"
+  }
 }

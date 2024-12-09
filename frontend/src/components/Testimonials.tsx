@@ -6,6 +6,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 
 // Type definition for a testimonial
@@ -48,10 +49,12 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
                   <p>“{testimonial.feedback}”</p>
                 </blockquote>
                 <figcaption className="mt-10">
-                  <img
+                  <Image
                     src={testimonial.image}
                     alt={testimonial.name}
                     className="mx-auto h-16 w-16 rounded-full"
+                    height={100}
+                    width={100}
                   />
                   <div className="mt-4 flex flex-col items-center space-y-1 text-base">
                     <div className="font-semibold text-text">{testimonial.name}</div>

@@ -3,6 +3,7 @@
 
 import { Star, Heart, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button"; // Assuming you have a button component in `shadcn/ui`
+import Image from "next/image";
 
 export default function ProductReview({ params }: { params: { id: string } }) {
   const dataset = {
@@ -22,8 +23,8 @@ export default function ProductReview({ params }: { params: { id: string } }) {
     <section className="md:py-8   container flex flex-col md:flex-row  justify-around gap-8 my-4 ">
 
       <div className="shrink-0 max-w-md lg:max-w-lg mx-auto">
-        <img className="w-full dark:hidden" src={image} alt={title} />
-        <img className="w-full hidden dark:block" src={darkImage} alt={title} />
+        <Image width={300} height={300} className="w-full dark:hidden" src={image} alt={title} />
+        <Image width={300} height={300} className="w-full hidden dark:block" src={darkImage} alt={title} />
       </div>
 
       <div className="mt-6 sm:mt-8 lg:mt-0">
