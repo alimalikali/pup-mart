@@ -2,7 +2,7 @@
 import Header from "@/components/Header";
 import React from "react";
 
-export default function ProductsLayout({ children, params }: { children: React.ReactNode; params: { id?: string } }) {
+export default function ProductsLayout({ children }: Readonly<{children: React.ReactNode;}>) {
 
   return (
     <div className=" flex flex-col w-full">
